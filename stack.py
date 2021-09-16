@@ -3,6 +3,9 @@ class Stack:
     def __init__(self):
         self.items = []
 
+    def __str__(self):
+        return str(self.items)
+
     def push(self, new_item):
         self.items.append(new_item)
 
@@ -31,4 +34,5 @@ def main():
     message = "atharva"
     print(rev_string(message))
 
-main()
+if __name__ == "__main__":
+    main()
